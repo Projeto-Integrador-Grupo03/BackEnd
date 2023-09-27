@@ -1,4 +1,6 @@
 
+using ecommerce_iniciativatena.Data;
+using Microsoft.EntityFrameworkCore;
 namespace ecommerce_iniciativatena
 {
     public class Program
@@ -10,11 +12,29 @@ namespace ecommerce_iniciativatena
             // Add services to the container.
 
             builder.Services.AddControllers();
+
+            // Conexão com o banco
+            var connectionString = builder.Configuration.
+               GetConnectionString("DefaultConnection");
+
+            builder.Services.AddDbContext<AppDbContext>(options =>
+                options.UseSqlServer(connectionString)
+            );
+
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
             var app = builder.Build();
+
+            // Criar o Banco de dados e as tabelas Automaticamente
+            using (var scope = app.Services.CreateAsyncScope())
+            {
+                var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+                dbContext.Database.EnsureCreated();
+            }
+
+            app.UseDeveloperExceptionPage();
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
