@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\projeto_integrador\\BackEnd\\ecommerce-iniciativatena\\ecommerce-iniciativatena.csproj": {}
+    "C:\\Users\\gaspa\\Área de Trabalho\\IniciativAtena\\BackEnd\\ecommerce-iniciativatena\\ecommerce-iniciativatena.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\projeto_integrador\\BackEnd\\ecommerce-iniciativatena\\ecommerce-iniciativatena.csproj": {
+    "C:\\Users\\gaspa\\Área de Trabalho\\IniciativAtena\\BackEnd\\ecommerce-iniciativatena\\ecommerce-iniciativatena.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\projeto_integrador\\BackEnd\\ecommerce-iniciativatena\\ecommerce-iniciativatena.csproj",
+        "projectUniqueName": "C:\\Users\\gaspa\\Área de Trabalho\\IniciativAtena\\BackEnd\\ecommerce-iniciativatena\\ecommerce-iniciativatena.csproj",
         "projectName": "ecommerce-iniciativatena",
-        "projectPath": "C:\\Users\\user\\Desktop\\projeto_integrador\\BackEnd\\ecommerce-iniciativatena\\ecommerce-iniciativatena.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\projeto_integrador\\BackEnd\\ecommerce-iniciativatena\\obj\\",
+        "projectPath": "C:\\Users\\gaspa\\Área de Trabalho\\IniciativAtena\\BackEnd\\ecommerce-iniciativatena\\ecommerce-iniciativatena.csproj",
+        "packagesPath": "C:\\Users\\gaspa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gaspa\\Área de Trabalho\\IniciativAtena\\BackEnd\\ecommerce-iniciativatena\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gaspa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -90,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

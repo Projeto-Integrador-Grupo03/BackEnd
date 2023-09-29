@@ -1,5 +1,10 @@
 
 using ecommerce_iniciativatena.Data;
+using ecommerce_iniciativatena.Model;
+using ecommerce_iniciativatena.Service;
+using ecommerce_iniciativatena.Service.Implements;
+using ecommerce_iniciativatena.Validator;
+using FluentValidation;
 using Microsoft.EntityFrameworkCore;
 namespace ecommerce_iniciativatena
 {
@@ -20,6 +25,12 @@ namespace ecommerce_iniciativatena
             builder.Services.AddDbContext<AppDbContext>(options =>
                 options.UseSqlServer(connectionString)
             );
+
+            // Validação de Entidades
+            builder.Services.AddTransient<IValidator<Categoria>, CategoriaValidator>();
+
+            // Registrar as Classes e Interfaces Service
+            builder.Services.AddScoped<ICategoriaService, CategoriaService>();
 
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();

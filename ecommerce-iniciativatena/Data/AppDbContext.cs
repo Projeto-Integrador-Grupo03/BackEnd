@@ -12,10 +12,10 @@ namespace ecommerce_iniciativatena.Data
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Categoria>().ToTable("tb_categoria");
+            modelBuilder.Entity<Categoria>().ToTable("tb_categorias");
         }
 
-        public DbSet<Categoria> Categoria { get; set; } = null!;
+        public DbSet<Categoria> Categorias { get; set; } = null!;
         
     }
 }
