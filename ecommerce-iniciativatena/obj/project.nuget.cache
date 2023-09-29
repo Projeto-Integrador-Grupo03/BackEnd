@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lfghXeYk6O1zMaaOIz9pkr6w9qxhvKmre9MViPBTul0H3L9G4nGlBk/tmGbw/5hpEPGI9cVEo5MG2zBN1yAwsw==",
+  "dgSpecHash": "sDxRhHq1jVuq481RRQsdGZbEiajBGU+ceT8sjx7ABYa0WO6/l9W/0Fu0J3NEZJObRYBgmmBWMLDZf4GJ2AC7zw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Desktop\\projeto_integrador\\backend\\ecommerce-iniciativatena\\ecommerce-iniciativatena.csproj",
+  "projectFilePath": "c:\\Users\\user\\Desktop\\projeto_integrador\\BackEnd\\ecommerce-iniciativatena\\ecommerce-iniciativatena.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.10\\microsoft.aspnetcore.openapi.7.0.10.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
