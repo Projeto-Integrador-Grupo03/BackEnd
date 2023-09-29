@@ -60,7 +60,7 @@ namespace ecommerce_iniciativatena.Service.Implements
 
         public async Task<Categoria?> Update(Categoria categoria)
         {
-            var CategoriaUpdate = await _context.Categorias.FindAsync(categoria);
+            var CategoriaUpdate = await _context.Categorias.FindAsync(categoria.Id);
 
             if (CategoriaUpdate is null)
                 return null;
@@ -70,7 +70,6 @@ namespace ecommerce_iniciativatena.Service.Implements
             await _context.SaveChangesAsync();
 
             return categoria;
-
         }
 
         public async Task Delete(Categoria categoria)
