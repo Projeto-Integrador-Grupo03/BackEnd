@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gaspa\\Área de Trabalho\\IniciativAtena\\BackEnd\\ecommerce-iniciativatena\\ecommerce-iniciativatena.csproj": {}
+    "C:\\Users\\user\\Desktop\\projeto_integrador\\BackEnd\\ecommerce-iniciativatena\\ecommerce-iniciativatena.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gaspa\\Área de Trabalho\\IniciativAtena\\BackEnd\\ecommerce-iniciativatena\\ecommerce-iniciativatena.csproj": {
+    "C:\\Users\\user\\Desktop\\projeto_integrador\\BackEnd\\ecommerce-iniciativatena\\ecommerce-iniciativatena.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gaspa\\Área de Trabalho\\IniciativAtena\\BackEnd\\ecommerce-iniciativatena\\ecommerce-iniciativatena.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\projeto_integrador\\BackEnd\\ecommerce-iniciativatena\\ecommerce-iniciativatena.csproj",
         "projectName": "ecommerce-iniciativatena",
-        "projectPath": "C:\\Users\\gaspa\\Área de Trabalho\\IniciativAtena\\BackEnd\\ecommerce-iniciativatena\\ecommerce-iniciativatena.csproj",
-        "packagesPath": "C:\\Users\\gaspa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gaspa\\Área de Trabalho\\IniciativAtena\\BackEnd\\ecommerce-iniciativatena\\obj\\",
+        "projectPath": "C:\\Users\\user\\Desktop\\projeto_integrador\\BackEnd\\ecommerce-iniciativatena\\ecommerce-iniciativatena.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\projeto_integrador\\BackEnd\\ecommerce-iniciativatena\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\gaspa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
