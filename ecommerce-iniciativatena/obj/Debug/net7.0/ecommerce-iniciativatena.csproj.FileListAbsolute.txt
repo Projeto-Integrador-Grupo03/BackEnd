@@ -241,3 +241,13 @@ C:\Users\sa_bl\OneDrive\Área de Trabalho\PI - Grupo03\BackEnd\ecommerce-iniciat
 C:\Users\sa_bl\OneDrive\Área de Trabalho\PI - Grupo03\BackEnd\ecommerce-iniciativatena\obj\Debug\net7.0\ecommerce-iniciativatena.pdb
 C:\Users\sa_bl\OneDrive\Área de Trabalho\PI - Grupo03\BackEnd\ecommerce-iniciativatena\obj\Debug\net7.0\ecommerce-iniciativatena.genruntimeconfig.cache
 C:\Users\sa_bl\OneDrive\Área de Trabalho\PI - Grupo03\BackEnd\ecommerce-iniciativatena\obj\Debug\net7.0\ref\ecommerce-iniciativatena.dll
+C:\Users\Valéria\Desktop\Curso Generation\Projetos\PROJETO\BackEnd\ecommerce-iniciativatena\obj\Debug\net7.0\ecommerce-iniciativatena.csproj.AssemblyReference.cache
+C:\Users\Valéria\Desktop\Curso Generation\Projetos\PROJETO\BackEnd\ecommerce-iniciativatena\obj\Debug\net7.0\ecommerce-iniciativatena.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Valéria\Desktop\Curso Generation\Projetos\PROJETO\BackEnd\ecommerce-iniciativatena\obj\Debug\net7.0\ecommerce-iniciativatena.AssemblyInfoInputs.cache
+C:\Users\Valéria\Desktop\Curso Generation\Projetos\PROJETO\BackEnd\ecommerce-iniciativatena\obj\Debug\net7.0\ecommerce-iniciativatena.AssemblyInfo.cs
+C:\Users\Valéria\Desktop\Curso Generation\Projetos\PROJETO\BackEnd\ecommerce-iniciativatena\obj\Debug\net7.0\ecommerce-iniciativatena.csproj.CoreCompileInputs.cache
+C:\Users\Valéria\Desktop\Curso Generation\Projetos\PROJETO\BackEnd\ecommerce-iniciativatena\obj\Debug\net7.0\ecommerce-iniciativatena.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Valéria\Desktop\Curso Generation\Projetos\PROJETO\BackEnd\ecommerce-iniciativatena\obj\Debug\net7.0\ecommerce-iniciativatena.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Valéria\Desktop\Curso Generation\Projetos\PROJETO\BackEnd\ecommerce-iniciativatena\obj\Debug\net7.0\ecommerce-iniciativatena.dll
+C:\Users\Valéria\Desktop\Curso Generation\Projetos\PROJETO\BackEnd\ecommerce-iniciativatena\obj\Debug\net7.0\refint\ecommerce-iniciativatena.dll
+C:\Users\Valéria\Desktop\Curso Generation\Projetos\PROJETO\BackEnd\ecommerce-iniciativatena\obj\Debug\net7.0\ecommerce-iniciativatena.pdb

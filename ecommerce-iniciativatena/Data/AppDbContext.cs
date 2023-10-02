@@ -13,9 +13,17 @@ namespace ecommerce_iniciativatena.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Categoria>().ToTable("tb_categorias");
+            modelBuilder.Entity<Produto>().ToTable("tb_produtos");
+
+            _ = modelBuilder.Entity<Produto>()
+               .HasOne(_ => _.Categoria)
+               .WithMany(c => c.Produto)
+               .HasForeignKey("CategoriaId")
+               .OnDelete(DeleteBehavior.Cascade);
         }
 
         public DbSet<Categoria> Categorias { get; set; } = null!;
+        public DbSet<Produto> Produtos { get; set; } = null!;
         
     }
 }

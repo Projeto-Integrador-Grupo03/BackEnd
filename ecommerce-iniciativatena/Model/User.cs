@@ -18,7 +18,7 @@ namespace ecommerce_iniciativatena.Model
         public string Usuario { get; set; } = string.Empty;
 
         [Column(TypeName = "varchar")]
-        [StringLength(3000)]
+        [StringLength(5000)]
         public string Foto { get; set; } = string.Empty;
 
         [Column(TypeName = "varchar")]
