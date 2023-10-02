@@ -18,7 +18,7 @@ namespace ecommerce_iniciativatena.Model
         public string? Duracao { get; set; }
 
         [Column(TypeName = "Decimal(8,2)")]
-        public string Valor { get; set; } = string.Empty;
+        public decimal Valor { get; set; } 
 
         [Column(TypeName = "Int")]
         public int Quantidade { get; set; }

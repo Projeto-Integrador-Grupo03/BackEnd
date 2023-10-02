@@ -3531,19 +3531,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Valéria\\.nuget\\packages\\": {}
+    "C:\\Users\\Computador\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Valéria\\Desktop\\Curso Generation\\Projetos\\PROJETO\\BackEnd\\ecommerce-iniciativatena\\ecommerce-iniciativatena.csproj",
+      "projectUniqueName": "C:\\Users\\Computador\\Desktop\\Projeto Integrador\\BackEnd\\ecommerce-iniciativatena\\ecommerce-iniciativatena.csproj",
       "projectName": "ecommerce-iniciativatena",
-      "projectPath": "C:\\Users\\Valéria\\Desktop\\Curso Generation\\Projetos\\PROJETO\\BackEnd\\ecommerce-iniciativatena\\ecommerce-iniciativatena.csproj",
-      "packagesPath": "C:\\Users\\Valéria\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Valéria\\Desktop\\Curso Generation\\Projetos\\PROJETO\\BackEnd\\ecommerce-iniciativatena\\obj\\",
+      "projectPath": "C:\\Users\\Computador\\Desktop\\Projeto Integrador\\BackEnd\\ecommerce-iniciativatena\\ecommerce-iniciativatena.csproj",
+      "packagesPath": "C:\\Users\\Computador\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Computador\\Desktop\\Projeto Integrador\\BackEnd\\ecommerce-iniciativatena\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Valéria\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Computador\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3619,7 +3619,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

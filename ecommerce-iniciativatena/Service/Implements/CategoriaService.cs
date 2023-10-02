@@ -16,7 +16,7 @@ namespace ecommerce_iniciativatena.Service.Implements
         public async Task<IEnumerable<Categoria>> GetAll()
         {
             return await _context.Categorias
-                //.Include(t => t.Produto)
+                .Include(c => c.Produto)
                 .ToListAsync();
 
         }
@@ -27,7 +27,7 @@ namespace ecommerce_iniciativatena.Service.Implements
             {
 
                 var Categoria = await _context.Categorias
-                    //.Include(t => t.Produto)
+                    .Include(c => c.Produto)
                     .FirstAsync(i => i.Id == id);
 
                 return Categoria;
@@ -43,7 +43,7 @@ namespace ecommerce_iniciativatena.Service.Implements
         public async Task<IEnumerable<Categoria>> GetByNome(string nome)
         {
             var Categoria = await _context.Categorias
-                            //.Include(t => t.Produto)
+                            .Include(c => c.Produto)
                             .Where(c => c.Nome.Contains(nome))
                             .ToListAsync();
 
