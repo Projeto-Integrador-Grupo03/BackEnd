@@ -16,5 +16,8 @@ namespace ecommerce_iniciativatena.Model
         [Column(TypeName = "varchar")]
         [StringLength(255)]
         public string Descricao { get; set; } = string.Empty;
+
+        [InverseProperty("Categoria")]
+        public virtual ICollection<Produto>? Produto { get; set; }
     }
 }
