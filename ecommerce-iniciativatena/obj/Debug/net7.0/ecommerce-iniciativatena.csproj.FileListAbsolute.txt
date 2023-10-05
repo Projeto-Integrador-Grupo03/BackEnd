@@ -332,3 +332,5 @@ C:\Users\Computador\Desktop\Projeto Integrador\BackEnd\ecommerce-iniciativatena\
 C:\Users\Computador\Desktop\Projeto Integrador\BackEnd\ecommerce-iniciativatena\obj\Debug\net7.0\ecommerce-iniciativatena.pdb
 C:\Users\Computador\Desktop\Projeto Integrador\BackEnd\ecommerce-iniciativatena\obj\Debug\net7.0\ecommerce-iniciativatena.genruntimeconfig.cache
 C:\Users\Computador\Desktop\Projeto Integrador\BackEnd\ecommerce-iniciativatena\obj\Debug\net7.0\ref\ecommerce-iniciativatena.dll
+C:\Users\user\Desktop\projeto_integrador\BackEnd\ecommerce-iniciativatena\bin\Debug\net7.0\BCrypt.Net-Core.dll
+C:\Users\user\Desktop\projeto_integrador\BackEnd\ecommerce-iniciativatena\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

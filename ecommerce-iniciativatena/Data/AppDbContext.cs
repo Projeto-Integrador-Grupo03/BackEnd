@@ -14,6 +14,7 @@ namespace ecommerce_iniciativatena.Data
         {
             modelBuilder.Entity<Categoria>().ToTable("tb_categorias");
             modelBuilder.Entity<Produto>().ToTable("tb_produtos");
+            modelBuilder.Entity<Produto>().ToTable("tb_usuarios");
 
             _ = modelBuilder.Entity<Produto>()
                .HasOne(_ => _.Categoria)
@@ -24,6 +25,7 @@ namespace ecommerce_iniciativatena.Data
 
         public DbSet<Categoria> Categorias { get; set; } = null!;
         public DbSet<Produto> Produtos { get; set; } = null!;
+        public DbSet<User> Users { get; set; } = null!;
         
     }
 }

@@ -34,6 +34,7 @@ namespace ecommerce_iniciativatena
             // Validação de Entidades
             builder.Services.AddTransient<IValidator<Categoria>, CategoriaValidator>();
             builder.Services.AddTransient<IValidator<Produto>, ProdutoValidator>();
+            builder.Services.AddTransient<IValidator<User>, UserValidator>();
 
 
             // Registrar as Classes e Interfaces Service
