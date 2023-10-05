@@ -40,6 +40,7 @@ namespace ecommerce_iniciativatena
             // Registrar as Classes e Interfaces Service
             builder.Services.AddScoped<ICategoriaService, CategoriaService>();
             builder.Services.AddScoped<IProdutoService, ProdutoService>();
+            builder.Services.AddScoped<IUserService, UserService>();
 
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
