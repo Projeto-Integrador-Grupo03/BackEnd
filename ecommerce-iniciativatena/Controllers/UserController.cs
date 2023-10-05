@@ -91,5 +91,17 @@ namespace ecommerce_iniciativatena.Controllers
 
             return Ok(Resposta);
         }
+
+        [AllowAnonymous]
+        [HttpPost("logar")]
+        public async Task<ActionResult> Autenticar([FromBody] UserLogin usuarioLogin)
+        {
+            var Resposta = await _authService.Autenticar(usuarioLogin);
+
+            if (Resposta is null)
+                return Unauthorized("Usuário e/ou Senha inválidos!");
+
+            return Ok(Resposta);
+        }
     }
 }

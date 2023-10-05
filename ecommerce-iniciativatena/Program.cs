@@ -91,8 +91,11 @@ namespace ecommerce_iniciativatena
                 app.UseSwaggerUI();
             }
 
-            app.UseAuthorization();
+            // Habilitar a Autenticação e a Autorização
 
+            app.UseAuthentication();
+
+            app.UseAuthorization();
 
             app.MapControllers();
 
