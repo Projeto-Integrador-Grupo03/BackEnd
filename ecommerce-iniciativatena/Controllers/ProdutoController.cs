@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using ecommerce_iniciativatena.Service;
 using ecommerce_iniciativatena.Model;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ecommerce_iniciativatena.Controllers
 {
@@ -20,12 +21,14 @@ namespace ecommerce_iniciativatena.Controllers
             _produtoValidator = produtoValidator;
         }
 
+        [AllowAnonymous]
         [HttpGet]
         public async Task<ActionResult> GetAll()
         {
             return Ok(await _produtoService.GetAll());
         }
 
+        [AllowAnonymous]
         [HttpGet("{id}")]
         public async Task<ActionResult> GetById(long id)
         {
@@ -39,12 +42,14 @@ namespace ecommerce_iniciativatena.Controllers
             return Ok(Resposta);
         }
 
+        [AllowAnonymous]
         [HttpGet("nome/{nome}")]
         public async Task<ActionResult> GetByNome(string nome)
         {
             return Ok(await _produtoService.GetByNome(nome));
         }
 
+        [Authorize]
         [HttpPost]
         public async Task<ActionResult> Create([FromBody] Produto produto)
         {
@@ -62,6 +67,7 @@ namespace ecommerce_iniciativatena.Controllers
             return CreatedAtAction(nameof(GetById), new { id = produto.Id }, produto);
         }
 
+        [Authorize]
         [HttpPut]
         public async Task<ActionResult> Update([FromBody] Produto produto)
         {
@@ -81,6 +87,7 @@ namespace ecommerce_iniciativatena.Controllers
             return Ok(Resposta);
         }
 
+        [Authorize]
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(long id)
         {

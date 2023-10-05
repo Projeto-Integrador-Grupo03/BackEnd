@@ -1,6 +1,8 @@
 ﻿using ecommerce_iniciativatena.Model;
+using ecommerce_iniciativatena.Security;
 using ecommerce_iniciativatena.Service;
 using FluentValidation;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ecommerce_iniciativatena.Controllers
@@ -13,23 +15,28 @@ namespace ecommerce_iniciativatena.Controllers
 
         private readonly IUserService _userService;
         private readonly IValidator<User> _userValidator;
+        private readonly IAuthService _authService;
 
         public UserController(
             IUserService userService,
-            IValidator<User> userValidator
+            IValidator<User> userValidator,
+            IAuthService authService
             )
         {
             _userService = userService;
             _userValidator = userValidator;
+            _authService = authService;
 
         }
 
+        [Authorize]
         [HttpGet("all")]
         public async Task<ActionResult> GetAll()
         {
             return Ok(await _userService.GetAll());
         }
 
+        [Authorize]
         [HttpGet("{id}")]
         public async Task<ActionResult> GetById(long id)
         {
@@ -43,6 +50,7 @@ namespace ecommerce_iniciativatena.Controllers
             return Ok(Resposta);
         }
 
+        [AllowAnonymous]
         [HttpPost("cadastrar")]
         public async Task<ActionResult> Create([FromBody] User usuario)
         {
@@ -59,6 +67,7 @@ namespace ecommerce_iniciativatena.Controllers
             return CreatedAtAction(nameof(GetById), new { id = Resposta.Id }, Resposta);
         }
 
+        [Authorize]
         [HttpPut("atualizar")]
         public async Task<ActionResult> Update([FromBody] User usuario)
         {

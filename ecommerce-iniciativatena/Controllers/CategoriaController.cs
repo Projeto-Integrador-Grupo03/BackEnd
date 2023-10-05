@@ -1,10 +1,12 @@
 ﻿using ecommerce_iniciativatena.Model;
 using ecommerce_iniciativatena.Service;
 using FluentValidation;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ecommerce_iniciativatena.Controllers
 {
+    [Authorize]
     [Route("~/categorias")]
     [ApiController]
     public class CategoriaController : ControllerBase
