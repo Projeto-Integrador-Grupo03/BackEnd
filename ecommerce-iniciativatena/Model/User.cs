@@ -25,5 +25,7 @@ namespace ecommerce_iniciativatena.Model
         [StringLength(255)]
         public string Senha { get; set; } = string.Empty;
 
+        public int Admin { get; set; } = 0;
+
     }
 }
