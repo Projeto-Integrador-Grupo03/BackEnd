@@ -11,6 +11,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using ecommerce_iniciativatena.Configuration;
+using MicroElements.Swashbuckle.FluentValidation.AspNetCore;
+using Microsoft.OpenApi.Models;
 
 namespace ecommerce_iniciativatena
 {
@@ -71,7 +74,49 @@ namespace ecommerce_iniciativatena
 
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
+
+            //Registrar o Swagger
+            builder.Services.AddSwaggerGen(options =>
+            {
+
+                //Personalizar a Págna inicial do Swagger
+                options.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Version = "v1",
+                    Title = "Projeto Blog Pessoal",
+                    Description = "Projeto Blog Pessoal - ASP.NET Core 7 - Entity Framework",
+                    Contact = new OpenApiContact
+                    {
+                        Name = "Iniciativa Atena",
+                        Email = "projetointegrador03gen@gmail.com",
+                        Url = new Uri("https://github.com/Projeto-Integrador-Grupo03")
+                    },
+                    License = new OpenApiLicense
+                    {
+                        Name = "Github",
+                        Url = new Uri("https://github.com/Projeto-Integrador-Grupo03")
+                    }
+                });
+
+                //Adicionar a Segurança no Swagger
+                options.AddSecurityDefinition("JWT", new OpenApiSecurityScheme
+                {
+                    In = ParameterLocation.Header,
+                    Description = "Digite um Token JWT válido!",
+                    Name = "Authorization",
+                    Type = SecuritySchemeType.Http,
+                    BearerFormat = "JWT",
+                    Scheme = "Bearer"
+                });
+
+                //Adicionar a configuração visual da Segurança no Swagger
+                options.OperationFilter<AuthResponsesOperationFilter>();
+
+            });
+
+            // Adicionar o Fluent Validation no Swagger
+            builder.Services.AddFluentValidationRulesToSwagger();
+
 
             var app = builder.Build();
 
