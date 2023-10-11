@@ -17,7 +17,7 @@ namespace ecommerce_iniciativatena.Validator
 
             RuleFor(u => u.Senha)
                 .NotEmpty()
-                .MaximumLength(8);
+                .MinimumLength(8);
 
             RuleFor(u => u.Foto)
                 .MaximumLength(5000);

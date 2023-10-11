@@ -32,10 +32,10 @@ namespace ecommerce_iniciativatena
                 }
             );
 
-            // Conexão com o Banco de dados
+            // Conexï¿½o com o Banco de dados
             if (builder.Configuration["Environment:Start"] == "PROD")
             {
-                // Conexão com o PostgresSQL - Nuvem
+                // Conexï¿½o com o PostgresSQL - Nuvem
 
                 builder.Configuration
                     .SetBasePath(Directory.GetCurrentDirectory())
@@ -50,7 +50,7 @@ namespace ecommerce_iniciativatena
             }
             else
             {
-                // Conexão com o SQL Server - Localhost
+                // Conexï¿½o com o SQL Server - Localhost
                 var connectionString = builder.Configuration
                 .GetConnectionString("DefaultConnection");
 
@@ -59,7 +59,7 @@ namespace ecommerce_iniciativatena
                 );
             }
 
-            // Validação de Entidades
+            // Validaï¿½ï¿½o de Entidades
             builder.Services.AddTransient<IValidator<Categoria>, CategoriaValidator>();
             builder.Services.AddTransient<IValidator<Produto>, ProdutoValidator>();
             builder.Services.AddTransient<IValidator<User>, UserValidator>();
@@ -71,7 +71,7 @@ namespace ecommerce_iniciativatena
             builder.Services.AddScoped<IUserService, UserService>();
             builder.Services.AddTransient<IAuthService, AuthService>();
 
-            // Adicionar a Validação do Token JWT
+            // Adicionar a Validaï¿½ï¿½o do Token JWT
 
             builder.Services.AddAuthentication(x =>
             {
@@ -98,12 +98,12 @@ namespace ecommerce_iniciativatena
             builder.Services.AddSwaggerGen(options =>
             {
 
-                //Personalizar a Págna inicial do Swagger
+                //Personalizar a Pï¿½gna inicial do Swagger
                 options.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Version = "v1",
                     Title = "Iniciativa Atena",
-                    Description = "Projeto Integrador Iniciativa Atenal - ASP.NET Core 7 - Entity Framework",
+                    Description = "Projeto Integrador Iniciativa Atena - ASP.NET Core 7 - Entity Framework",
                     Contact = new OpenApiContact
                     {
                         Name = "Iniciativa Atena",
@@ -117,18 +117,18 @@ namespace ecommerce_iniciativatena
                     }
                 });
 
-                //Adicionar a Segurança no Swagger
+                //Adicionar a Seguranï¿½a no Swagger
                 options.AddSecurityDefinition("JWT", new OpenApiSecurityScheme
                 {
                     In = ParameterLocation.Header,
-                    Description = "Digite um Token JWT válido!",
+                    Description = "Digite um Token JWT vï¿½lido!",
                     Name = "Authorization",
                     Type = SecuritySchemeType.Http,
                     BearerFormat = "JWT",
                     Scheme = "Bearer"
                 });
 
-                //Adicionar a configuração visual da Segurança no Swagger
+                //Adicionar a configuraï¿½ï¿½o visual da Seguranï¿½a no Swagger
                 options.OperationFilter<AuthResponsesOperationFilter>();
 
             });
@@ -154,19 +154,19 @@ namespace ecommerce_iniciativatena
                 app.UseSwagger();
                 app.UseSwaggerUI();
 
-            // Swagger Como Página Inicial - Nuvem
+            // Swagger Como Pï¿½gina Inicial - Nuvem
 
             if (app.Environment.IsProduction())
             {
                 app.UseSwaggerUI(options =>
                 {
-                    options.SwaggerEndpoint("/swagger/v1/swagger.json", "Blog Pessoal - v1");
+                    options.SwaggerEndpoint("/swagger/v1/swagger.json", "Iniciativa Atena - v1");
                     options.RoutePrefix = string.Empty;
                 });
             }
 
 
-            // Habilitar a Autenticação e a Autorização
+            // Habilitar a Autenticaï¿½ï¿½o e a Autorizaï¿½ï¿½o
 
             app.UseAuthentication();
 
