@@ -136,6 +136,18 @@ namespace ecommerce_iniciativatena
             // Adicionar o Fluent Validation no Swagger
             builder.Services.AddFluentValidationRulesToSwagger();
 
+            // Configuração do CORS
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy(name: "MyPolicy",
+                    policy =>
+                    {
+                        policy.AllowAnyOrigin()
+                        .AllowAnyHeader()
+                        .AllowAnyMethod();
+                    });
+            });
+
 
             var app = builder.Build();
 
@@ -165,9 +177,10 @@ namespace ecommerce_iniciativatena
                 });
             }
 
+            //Habilitar CORS
+            app.UseCors("MyPolicy");
 
             // Habilitar a Autentica��o e a Autoriza��o
-
             app.UseAuthentication();
 
             app.UseAuthorization();
